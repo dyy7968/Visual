@@ -65,9 +65,11 @@ python detect.py --weights best.pt --source video.mp4 --conf-thres 0.35 --iou-th
 
 | 文件 | 规格 |
 |---|---|
-| result.mp4 | 20.0 s / 1280×720 / 4.72 MB（源视频 9–29 s） |
-| frame_01/02/03.png | t=2.0 s（ball 0.76 + 4 person）/ 7.2 s（4 person）/ 17.8 s（ball 0.87 + 7 person） |
+| result.mp4 | 21.0 s / 1280×720 / 1.92 MB，验证集 42 张图逐帧推理拼接（2 fps） |
+| frame_01/02/03.png | t=3.0 s（5 person）/ 10.5 s（ball 0.80 + 6 person）/ 18.0 s（ball 0.83 + 7 person） |
 | best.pt | 13.7 MB |
+
+`result.mp4` 全部画面取自验证集（42 张，未参与训练），与第 5 节指标同源。
 
 ## 7. 遇到的问题
 
