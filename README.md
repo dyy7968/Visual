@@ -47,6 +47,8 @@ python train.py --data dataset/ball_person.yaml --weights yolov5s.pt \
 
 环境：Windows 11 / Python 3.11.18 / PyTorch 2.11.0+cu128 / RTX 5060 Laptop 8 GB / YOLOv5 v7.0-570-gcb2f17fd（yolov5s，hyp.scratch-low，SGD lr0=0.01，AMP）。
 
+复现：按 §3 从源视频重建 train/val，用本节命令训练 100 轮得 `best.pt`，按 §6 推理。
+
 ## 5. 验证集指标
 
 | Class | Images | Instances | P | R | mAP50 | mAP50-95 |
